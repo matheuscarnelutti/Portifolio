@@ -1,0 +1,52 @@
+img{
+    width: 30px;
+    height: 30px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+font-family: sans-serif;
+    }
+
+ header{
+   margin-top: 15px;     
+    align-items: center;
+    display: flex;  /* deixa flexivel, flutuando, tira o display block */
+    justify-content: space-around; /* coloca espaçamento em todos os itens */
+    }
+
+header ul{
+    list-style: none;
+    display: flex;
+    }
+.centralizar{
+  display: flex;
+  align-items: center;  
+ margin-right: 370px;
+   
+}
+
+header ul li + li{ /*coloca margin apenas na li que possuí itens ao lado*/
+    margin-left: 24px;
+    }
+
+header  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.6s; /* tempo que demora para mudar de branco para vermelho*/
+    }
+
+header a:hover{ /*captura quando o mouse passa em cima da lista e muda a cor*/
+    color: #156bac;
+    
+    text-decoration: underline; /* Adiciona um traço embaixo do texto quando o mouse passa sobre o link */
+    text-underline-offset: 0.9em; /* Ajusta a distância entre o texto e a linha */
+    text-decoration-thickness: 0.1em; /* Ajusta a espessura da linha */
+    
+    }
