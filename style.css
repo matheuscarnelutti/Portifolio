@@ -18,8 +18,12 @@ font-family: sans-serif;
    margin-top: 15px;     
     align-items: center;
     display: flex;  /* deixa flexivel, flutuando, tira o display block */
-    justify-content: space-around; /* coloca espaçamento em todos os itens */
+    justify-content: center; /* coloca espaçamento em todos os itens */
     }
+
+header h1{
+    margin-right: 150px;
+}
 
 header ul{
     list-style: none;
@@ -28,7 +32,8 @@ header ul{
 .centralizar{
   display: flex;
   align-items: center;  
- margin-right: 370px;
+margin-right: 250px;
+
    
 }
 
@@ -50,3 +55,100 @@ header a:hover{ /*captura quando o mouse passa em cima da lista e muda a cor*/
     text-decoration-thickness: 0.1em; /* Ajusta a espessura da linha */
     
     }
+
+/*--------------------------------------------------------------*/
+
+.container {
+    margin-top: 50px; /* Distância do topo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image img {
+    margin-top: 20%;
+    margin-left: 15%; /* Margem à esquerda */
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.texto  p{
+    max-width: 400px;
+    margin-left: 20%;
+    margin-top: 20px;
+  
+}
+
+.texto  h2{
+    max-width: 400px;
+    margin-left: 20%;
+  
+}
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 768px) {
+    header {
+        justify-content: center; /* Altera o espaçamento entre os itens do cabeçalho */
+    }
+
+    header ul {
+        margin-top: 15px; /* Ajusta a margem superior das listas */
+    }
+
+    .centralizar {
+        margin-right: 25px; /* Remove a margem direita */
+    }
+
+
+    .image img {
+        margin-top: 10%; /* Ajusta a margem superior */
+        margin-left: 10%; /* Ajusta a margem esquerda */
+         
+    }
+
+    .texto p,
+    .texto h2 {
+        margin-left: 10%; /* Ajusta a margem esquerda */
+    }
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 767px) {
+    header {
+        flex-direction: column; /* Altera a direção dos itens do cabeçalho para uma coluna */
+        align-items: center; /* Alinha os itens centralmente */
+    }
+
+    header h1{
+        margin-right: 3%;
+    }
+
+    header ul {
+        margin-top: 15px; /* Ajusta a margem superior das listas */
+    }
+
+    .centralizar {
+        margin-right: 25px; /* Remove a margem direita */
+    }
+
+    .image img {
+        margin-top: 10%; /* Ajusta a margem superior */
+        margin-left: 10px; /* Remove a margem esquerda */
+        width: 90%; /* Ajusta a largura da imagem */
+        height: auto; /* Define a altura automaticamente */
+    }
+
+    .texto p,
+    .texto h2 {
+        margin-left: 0; /* Remove a margem esquerda */
+        text-align: center; /* Centraliza o texto */
+        max-width: 80%; /* Define a largura máxima do texto */
+        margin-top: 20px; /* Ajusta a margem superior */
+    }
+}
+
