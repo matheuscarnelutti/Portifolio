@@ -1,0 +1,231 @@
+ img{
+    width: 30px;
+    height: 30px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        text-align: center;
+        background-image: url('fundo.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+ header{
+    margin-top: 25px;     
+    align-items: center;
+    background-image: url('fundo4.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid rgb(255, 255, 255);
+    }
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav h1{
+    display: flex;
+    color: #ffffff;
+    
+ }
+
+div#menu{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    
+}
+
+#menu a {
+    color: rgb(255, 255, 255); /* Define a cor do texto dos links como preto */
+}
+
+div#centralizar{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+header div#centralizar{
+    margin-top: 8px;
+}
+
+header a:hover{ /*captura quando o mouse passa em cima da lista e muda a cor*/
+    color: #ffffff;
+    
+    text-decoration: underline; /* Adiciona um traço embaixo do texto quando o mouse passa sobre o link */
+    text-underline-offset: 0.9em; /* Ajusta a distância entre o texto e a linha */
+    text-decoration-thickness: 0.1em; /* Ajusta a espessura da linha */
+    
+    }
+
+/*--------------------------------------------------------------*/
+
+.container {
+    margin-top: 50px; /* Distância do topo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image img {
+    margin-top: 20%;
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+    width: 370px; /* Define a largura da imagem */
+    height: 370px; /* Define a altura da imagem igual à largura para torná-la quadrada */
+    background-image: url('fundo2.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid rgb(255, 255, 255); /* Adiciona uma borda preta de 2px */    
+    border-radius: 0px 30px 0px 30px;
+    display: block; /* Garante que a imagem seja um bloco para centralização correta */
+}
+
+.texto{
+    margin-top: 80px;
+    color: #ffffff;
+}
+
+
+.texto  p{
+    max-width: 600px;
+    margin-left: 20%;
+    text-align: justify; /* Justifica o texto para alinhar ambos os lados */
+    color: #ffffff;
+}
+
+.texto  h2{
+    max-width: 500px;
+    margin-left: 20%;
+  
+}
+
+.decoração {
+    margin-left: 500px; /* Ajusta a margem direita para manter a decoração visível */
+    
+}
+
+.decoração img{
+    width: 90px;
+    height: 90px;
+}
+
+/* Estilos para telas menores até 768px */
+@media only screen and (max-width: 768px) {
+   
+
+    header h1 {
+        margin-right: 0; /* Remove a margem direita para alinhamento */
+    }
+
+    header p {
+        margin-top: 15px; /* Ajusta a margem superior dos parágrafos */
+    }
+
+    .container {
+        width: 100%; /* Ocupa toda a largura disponível */  
+    }
+
+    .image img {
+        margin-bottom: 350px;
+        width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */  
+        height: auto; /* Mantém a proporção da imagem */
+        object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorcer */
+        display: flex; /* Remove espaços extras ao redor da imagem */
+    }
+
+    .texto {
+        width: 180%; /* Faz com que o contêiner de texto ocupe toda a largura disponível */
+        margin-top: 15px; /* Adiciona espaço superior para separar o texto da imagem */
+        padding: 0 10px; /* Adiciona padding lateral para o texto */
+        box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    }
+
+    .texto p,
+    .texto h2 {
+        margin: 0; /* Remove margens padrão para um layout mais consistente */
+        padding: 0; /* Remove padding padrão */
+    }
+
+    .decoração {
+        margin-left: 100px; /* Ajusta a margem direita para manter a decoração visível */
+    }
+}
+
+
+
+
+
+/* Estilos adicionais para telas maiores até 992px */
+@media only screen and (max-width: 992px)  {
+   
+    header {
+        
+        padding: 10px; /* Adiciona um espaçamento interno ao cabeçalho */
+    }
+
+    nav {
+       
+        flex-direction: column; /* Altera a direção da navegação para uma coluna */
+        align-items: center; /* Alinha os itens da navegação centralmente */
+    }
+
+    nav h1 {
+      
+        margin-bottom: 10px; /* Adiciona uma margem inferior ao título */
+    }
+
+    div#menu {
+      
+        flex-direction: column; /* Altera a direção do menu para uma coluna */
+        align-items: center; /* Alinha os itens do menu centralmente */
+        gap: 10px; /* Adiciona um espaçamento entre os itens do menu */
+
+    }
+
+    div#centralizar {
+       margin-top: 15px;
+
+    }
+
+    .image img {
+     
+        margin-top: 5%; /* Ajusta a margem superior da imagem */
+        margin-left: 25px; /* Centraliza a imagem horizontalmente */
+        margin-right: auto; /* Centraliza a imagem horizontalmente */
+        width: 85%; /* Reduz um pouco a largura da imagem */
+        height: auto; /* Define a altura automaticamente */
+    }
+
+    .texto p,
+    .texto h2 {
+      
+        text-align: center; /* Centraliza o texto */
+        max-width: 90%; /* Define a largura máxima do texto */
+        margin-top: 5px; /* Ajusta a margem superior */
+        margin-right: 80px;
+    }
+
+
+}
+
+
+
+
+

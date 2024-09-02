@@ -1,0 +1,239 @@
+img{
+    width: 30px;
+    height: 30px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        text-align: center;
+        background-image: url('../fundo.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+ header{
+    margin-top: 25px;     
+    align-items: center;
+    background-image: url('../fundo4.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+   
+    }
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav h1{
+    display: flex;
+    color: #ffffff;
+    
+ }
+
+div#menu{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    
+}
+
+#menu a {
+    color: #ffffff;
+}
+
+div#centralizar{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+header div#centralizar{
+    margin-top: 8px;
+}
+
+header a:hover{ /*captura quando o mouse passa em cima da lista e muda a cor*/
+    color: #ffffff;
+    
+    text-decoration: underline; /* Adiciona um traço embaixo do texto quando o mouse passa sobre o link */
+    text-underline-offset: 0.9em; /* Ajusta a distância entre o texto e a linha */
+    text-decoration-thickness: 0.1em; /* Ajusta a espessura da linha */
+    
+    }
+
+/*menu*/
+
+
+/* Estilo das seções */
+section {
+    margin: 45px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-image: url('../fundo3.avif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 10px;
+  
+}
+
+/* Estilo específico para a seção de formação */
+#formacao {
+    background-image: url('../fundo3.avif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#formacao h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+
+/* Estilo para a seção de portfólio */
+#portifolio {
+    background-image: url('../fundo3.avif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+}
+
+#portifolio h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Estilo para os itens do portfólio */
+.portfolio-item {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.portfolio-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.curriculo{
+    color: #ffffff;
+}
+
+.curriculo h2{
+    color: #ffffff;
+}
+
+.curriculo a{
+   
+    color: rgb(21, 127, 255);
+    cursor: pointer;
+}
+
+
+/* Estilos para telas menores até 768px */
+@media only screen and (max-width: 768px) {
+    header {
+        margin-top: 15px; /* Espaçamento superior do cabeçalho */
+        margin-bottom: 30px; /* Espaçamento inferior do cabeçalho para separar das seções */
+        flex-direction: column; /* Altera a direção dos itens do cabeçalho para uma coluna */
+        align-items: center; /* Alinha os itens centralmente */
+        padding: 10px; /* Adiciona um espaçamento interno ao cabeçalho */
+    }
+
+    header h1 {
+        margin-right: 3%;
+    }
+
+    header p {
+        margin-top: 15px; /* Ajusta a margem superior das listas */
+    }
+
+    .centralizar {
+        margin-right: 25px; /* Remove a margem direita */
+    }
+
+    .imagem-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        padding: 20px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+        margin: 0 10px; /* Adiciona uma margem horizontal */
+        margin-bottom: 20px; /* Adiciona uma margem inferior entre as seções */
+        max-width: 100%; /* Garante que a seção não ultrapasse a largura da tela */
+        box-sizing: border-box; /* Inclui padding e border na largura total */
+    }
+}
+
+/* Estilos adicionais para telas menores até 992px */
+@media only screen and (max-width: 992px) {
+    header {
+        padding: 10px; /* Adiciona um espaçamento interno ao cabeçalho */
+        margin-bottom: 30px; /* Espaçamento inferior do cabeçalho para separar das seções */
+    }
+
+    nav {
+        flex-direction: column; /* Altera a direção da navegação para uma coluna */
+        align-items: center; /* Alinha os itens da navegação centralmente */
+    }
+
+    nav h1 {
+        margin-bottom: 10px; /* Adiciona uma margem inferior ao título */
+    }
+
+    div#menu {
+        flex-direction: column; /* Altera a direção do menu para uma coluna */
+        align-items: center; /* Alinha os itens do menu centralmente */
+        gap: 15px; /* Adiciona um espaçamento entre os itens do menu */
+        padding: 0; /* Remove o padding do menu */
+    }
+
+    div#centralizar {
+        margin-top: 15px;
+    }
+
+    .imagem-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        padding: 20px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+        margin: 0 15px; /* Adiciona uma margem horizontal */
+        margin-bottom: 20px; /* Adiciona uma margem inferior entre as seções */
+        max-width: 100%; /* Garante que a seção não ultrapasse a largura da tela */
+        box-sizing: border-box; /* Inclui padding e border na largura total */
+    }
+}
+
+

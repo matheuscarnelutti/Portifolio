@@ -1,0 +1,325 @@
+img{
+    width: 30px;
+    height: 30px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        text-align: center;
+        background-image: url('../fundo.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+ header{
+    margin-top: 25px;     
+    align-items: center;
+    background-image: url('../fundo4.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+   
+    }
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav h1{
+    display: flex;
+    color: #ffffff;
+    
+ }
+
+div#menu{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    
+}
+
+#menu a {
+    color: rgb(255, 255, 255); /* Define a cor do texto dos links como preto */
+}
+
+div#centralizar{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+header div#centralizar{
+    margin-top: 8px;
+}
+
+header a:hover{ /*captura quando o mouse passa em cima da lista e muda a cor*/
+    color: #ffffff;
+    
+    text-decoration: underline; /* Adiciona um traço embaixo do texto quando o mouse passa sobre o link */
+    text-underline-offset: 0.9em; /* Ajusta a distância entre o texto e a linha */
+    text-decoration-thickness: 0.1em; /* Ajusta a espessura da linha */
+    
+    }
+
+/*menu*/
+
+
+
+.bordas {
+    margin-left: 23px; /* Move as bordas para a direita */
+    background-image: url('../fundo3.avif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 1px solid white;
+   
+}
+
+/* Estilo para as imagens */
+.imagem img {
+    border-radius: 5%;
+    cursor: pointer;
+    width: 80%; /* Ajusta a largura da imagem para preencher o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 90%; /* Define a altura máxima da imagem para preencher o contêiner sem ultrapassar */
+    display: block; /* Remove espaço abaixo da imagem */
+    transition: transform 0.3s ease; /* Transição suave para o aumento da imagem */
+}
+
+/* Efeito de hover: aumenta a imagem */
+.imagem img:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 10% */
+}
+
+/* Estilo do container das imagens */
+.imagem_container {
+  
+    display: flex; /* Exibe os blocos lado a lado */
+    flex-wrap: wrap; /* Permite que os blocos quebrem para a linha seguinte se necessário */
+    gap: 20px; /* Espaço entre os blocos */
+    padding: 0; /* Remove o padding do contêiner para evitar espaços extras */
+    justify-content: center; /* Alinha os blocos à esquerda */
+    align-items: center; /* Alinha os blocos no topo do contêiner */
+    min-height: 100vh; /* Garante que o contêiner ocupe pelo menos a altura total da tela */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura totais */
+}
+
+/* Estilo para cada bloco de imagem */
+.imagem {
+    display: flex;
+    flex-direction: column; /* Organiza itens em uma coluna dentro do bloco */
+    align-items: center; /* Alinha itens ao centro horizontalmente */
+    justify-content: center; /* Alinha itens ao topo do bloco */
+    width: 200px; /* Largura fixa para garantir que todos os blocos tenham o mesmo tamanho */
+    height: 400px; /* Altura fixa para garantir que todos os blocos tenham o mesmo tamanho */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura totais */
+    overflow: hidden; /* Evita que conteúdo ultrapasse os limites do bloco */
+    padding: 10px; /* Adiciona algum espaçamento interno ao bloco */
+   
+}
+
+
+/* Estiliza o título */
+.imagem h2 {
+    margin: 0; /* Remove margens padrão */
+    font-size: 16px; /* Tamanho do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.imagem button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff;               /* Cor do texto */
+    border: none;              /* Remove a borda padrão */
+    border-radius: 5px;       /* Bordas arredondadas no botão */
+    padding: 10px 20px;       /* Espaçamento interno do botão */
+    font-size: 1em;           /* Tamanho da fonte */
+    cursor: pointer;          /* Cursor em forma de mão ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Efeito de transição para a cor de fundo */
+    margin-top: 40px;         /* Margem superior para afastar do título */
+}
+
+
+
+/* Estilização para o botão ao passar o mouse */
+.imagem button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* sobre os projetos */
+#texto {
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#texto2 {
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    justify-content: center; 
+    color: #ffffff;
+}
+
+#texto3 {
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    justify-content: center; 
+    color: #ffffff;
+}
+
+#texto4 {
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    justify-content: center; 
+    color: #ffffff;
+}
+
+#texto5 {
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    justify-content: center; 
+    color: #ffffff;
+}
+
+#texto6 {
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    justify-content: center; 
+    color: #ffffff;
+}
+
+.imagem #doaja #tcc{
+    margin-bottom: 50px;
+}
+
+.imagem #doaja{
+    margin-bottom: -34px;
+ 
+}
+
+
+
+
+
+
+/* Estilos para telas menores até 768px */
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; /* Altera a direção dos itens do cabeçalho para uma coluna */
+        align-items: center; /* Alinha os itens centralmente */
+        justify-content: center; /* Centraliza o conteúdo verticalmente se necessário */
+        text-align: center; /* Centraliza o texto dentro do cabeçalho */
+        padding: 15px; /* Adiciona um espaçamento interno */
+        margin-bottom: 30px; /* Espaçamento inferior para separar das seções */
+    }
+
+    header h1 {
+        margin: 0; /* Remove margens para evitar espaçamentos extras */
+    }
+
+    header p {
+        margin-top: 15px; /* Ajusta a margem superior das listas */
+    }
+
+    .centralizar {
+        margin: 15px 0; /* Adiciona uma margem vertical para separar os itens */
+        text-align: center; /* Centraliza o conteúdo do centralizador */
+    }
+
+    .imagem-container {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Centraliza o conteúdo interno se necessário */
+    }
+
+    section {
+        padding: 20px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+        margin: 0 auto; /* Centraliza horizontalmente e remove margens laterais */
+        margin-bottom: 20px; /* Adiciona uma margem inferior entre as seções */
+        max-width: 100%; /* Garante que a seção não ultrapasse a largura da tela */
+        box-sizing: border-box; /* Inclui padding e border na largura total */
+        text-align: center; /* Centraliza o texto dentro da seção */
+    }
+}
+
+/* Estilos para telas menores até 992px */
+@media only screen and (max-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: column; /* Itens em coluna */
+        align-items: center; /* Centraliza itens horizontalmente */
+        justify-content: center; /* Centraliza itens verticalmente */
+        text-align: center; /* Centraliza texto */
+        padding: 15px; /* Espaçamento interno */
+        margin-bottom: 30px; /* Espaço inferior */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Itens em coluna */
+        align-items: center; /* Centraliza itens horizontalmente */
+        text-align: center; /* Centraliza texto */
+        width: 100%; /* Largura total */
+    }
+
+    div#menu {
+        display: flex;
+        flex-direction: column; /* Itens em coluna */
+        align-items: center; /* Centraliza itens horizontalmente */
+        gap: 10px; /* Espaçamento entre itens */
+        padding: 0; /* Remove padding */
+        width: 100%; /* Largura total */
+    }
+
+    div#centralizar {
+        margin-top: 15px; /* Espaço superior */
+        text-align: center; /* Centraliza texto */
+    }
+
+    .imagem-container {
+        margin-top: 25px; /* Espaço superior */
+        display: flex;
+        justify-content: center; /* Centraliza conteúdo horizontalmente */
+        align-items: center; /* Centraliza conteúdo verticalmente */
+    }
+
+    section {
+        padding: 20px; /* Espaçamento interno */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-bottom: 20px; /* Espaço inferior entre seções */
+        max-width: 100%; /* Largura máxima */
+        box-sizing: border-box; /* Inclui padding e border na largura */
+        text-align: center; /* Centraliza texto */
+    }
+}
+
